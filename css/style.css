@@ -89,7 +89,7 @@
     margin-bottom: 6rem;
 }
 
-.project-item{
+.project-tile{
     background: whitesmoke;
     border-radius: 3rem;
     box-shadow: 2px 2px 2px 2px darkgrey;
@@ -137,6 +137,12 @@ button:active{
     cursor: pointer;
 }
 
+#profile-link{
+    font-size: 1.5rem;
+    padding: 2rem;
+    background: slategray;
+}
+
 #profile-link:hover{
     background-color: black;
     color: white;
@@ -153,6 +159,101 @@ button:active{
     background: black;
     color: white;
 }
+@media( max-width: 660px){
+    #navbar{
+        display: inline-block;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: darkcyan;
+        z-index: 100;
+    }
+    
+    .nav-title{
+        visibility: hidden;
+        padding: 0;
+        font-size: 0rem;
+        margin-right: 0;
+    }
+    
+    #navbar ul li{
+        vertical-align: middle;
+    }
+    
+    .navbar-list{
+        display: flex;
+        margin-right: 2rem;
+        list-style: none;
+    }
+    
+    .navbar-list li{
+        padding: 5px;
+    }
+    
+    
+    .navbar-list li img{
+        width: 25px;
+        background-color: white;
+        padding: 7px;
+        border-radius: 10px;
+    }
+    .left-option{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    .projects-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 4rem;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        margin-bottom: 6rem;
+    }
+    
+    .project-tile{
+        background: whitesmoke;
+        border-radius: 3rem;
+        box-shadow: 2px 2px 2px 2px darkgrey;
+    }
+    
+    .project-image{
+        width: 5rem;
+        padding: 2rem;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    
+    .project-title{
+        padding: 1rem;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    
+    .project-description{
+        padding: 1rem;
+    }
+
+    button{
+        margin-top: 8px;
+        margin-left: -10px;
+        font-variant:small-caps;
+        font-size: 15px;
+        border: 0;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 4px;
+        margin-right: 5px;
+    }
+}
+
+
 
 @keyframes rotate360 {
     to { transform: rotate(360deg); }
