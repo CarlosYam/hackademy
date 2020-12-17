@@ -5,6 +5,7 @@
         <title>My Portfolio</title>
         <link rel="stylesheet" href="css/style.css">
         <script type="text/javascript" src="js/app.js"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </head>
     <body>
         <header>
@@ -26,7 +27,7 @@
                         <a href="#about"><button>About</button></a>
                     </li>
                     <li>
-                        <a href="#"><button id="profile-link" onclick="openGitHub()">GitHub</button></a>
+                        <a href="#"><button onclick="openGitHub(1)">GitHub</button></a>
                     </li>
                 </ul>
             </nav>
@@ -40,14 +41,14 @@
         <section id="projects">
             <h1 class="">List Projects</h1>
             <div class="projects-list">
-                <div class="project-item">
+                <div class="project-tile">
                     <img class="project-image" src="img/vuejs.png" alt="">
                     <div>
                         <label class="project-title">VueJS</label>
                         <p class="project-description">Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable.</p>
                     </div>
                 </div>
-                <div class="project-item">
+                <div class="project-tile">
                     <img class="project-image" src="img/laravel.png" alt="">
                     <div>
                         <label class="project-title">Laravel Framework</label>
@@ -55,6 +56,8 @@
                     </div>
                 </div>
             </div>
+
+            <a id="profile-link" href="https://github.com/CarlosYam" target="_blank"><button>Show all project</button></a>
         </section>
 
         <section id="about">
